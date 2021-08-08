@@ -1,0 +1,38 @@
+package FirstProgram;
+
+public class Armstrong {
+
+	public static void main(String[] args) {
+		int i=371, k, reminder, total= 0;
+		
+		k=i;
+		while (k!=0) {
+			reminder= k%10;
+			total += (reminder*reminder*reminder);
+			k=k/10;
+		}
+		if(total==i) {
+			System.out.println("The number is armstrong number");
+			
+		}
+		else
+			System.err.println("It is not a armstrong number");
+		// TODO Auto-generated method stub
+		
+	//Using Math lab for the power
+		while (k!=0) {
+			reminder= k%10;
+			total += Math.pow(reminder,3);
+			k=k/10;
+		}
+		if(total==i) {
+			System.out.println("The number is armstrong number");
+			
+		}
+		else
+			System.err.println("It is not a armstrong number");
+		
+
+	}
+
+}
