@@ -1,0 +1,18 @@
+package FirstProgram;
+
+public class SumOfDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 911, sum = 0, reminder;
+		System.out.println("The sum of the "+ i + " is");
+
+		while (i != 0) {
+			reminder = i % 10;// 567%10= 7
+			i = i / 10;//567/10= 56
+			sum = reminder + sum;//Storing the reminder + next reminder(7+6+5)
+		}
+		System.out.println(sum);// printing the sum
+	}
+
+}
